@@ -90,7 +90,7 @@ fi
 
 cat > $NGINXCONFIG <<EOF
 server {
-    listen       80;
+    listen       8084;
     server_name  _;
     
     location / { 

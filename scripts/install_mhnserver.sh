@@ -76,9 +76,9 @@ mkdir -p /etc/nginx
 if [ $OS == "Debian" ]; then
     mkdir -p /etc/nginx/sites-available
     mkdir -p /etc/nginx/sites-enabled
-    NGINXCONFIG=/etc/nginx/sites-available/default
+    NGINXCONFIG=/etc/nginx/sites-available/mhn
     touch $NGINXCONFIG
-    ln -fs /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+    ln -fs /etc/nginx/sites-available/mhn /etc/nginx/sites-enabled/mhn
     NGINXUG='www-data:www-data'
     NGINXUSER='www-data'
 
